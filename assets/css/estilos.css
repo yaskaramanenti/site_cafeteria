@@ -1,0 +1,248 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Source+Sans+3&display=swap');
+
+:root { 
+   --fonte-principal: 'Source Sans 3';
+   --fonte-secundaria: 'Sacramento'; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-principal), cursive;
+}
+
+h1 {
+    font-family: var(--fonte-secundaria), cursive;
+}
+
+#nav {
+    background-color: rgb(126, 221, 221);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#nav ul li {
+     list-style: none;
+     display: inline;
+     padding-top: 5px;
+     padding-bottom: 5px;
+     margin-left: 5px;
+     margin-right: 5px;
+}     
+
+#nav ul#menu li {
+    float: left;
+    border-radius: 8px;
+}
+
+#nav ul.right li {
+    float: right;
+}
+
+.clearfix {
+    position: relative;
+    overflow: hidden;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*imagem banner atrás*/
+
+.banner {
+    position: relative;
+}
+
+.banner::before {
+    content: "";
+    background-image: url(../img/fundo_corações-removebg-preview.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+#nav ul li a {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+#nav ul#menu li:hover {
+    background-color: rgb(46, 161, 161);
+}
+
+.container {
+    width: 1140px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.pink {
+    background-color: rgb(245, 218, 223);
+    padding-bottom: 40px;
+}
+
+img {
+    object-fit: cover;
+    border-radius: 20px 20px 20px 20px;
+}
+
+[class*="col-"] {
+    margin-top: 25px;
+    float: left;
+    padding-right: 5px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 24.99%;}
+.col-4 {width: 33.32%;}
+.col-5 {width: 41.65%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.31%;}
+.col-8 {width: 66.32%;}
+.col-9 {width: 74.97%;}
+.col-10 {width: 83.3%;}
+.col-11 {width: 91.63%;}
+.col-12 {width: 100%;}
+
+.col-6 {
+    position: relative;
+    display: inline-block; 
+}
+
+.col-6 .img_ajuste {
+    border-radius: 20px 20px 20px 20px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    transition: all 1s ease;
+}
+
+.col-6:hover .img_ajuste {
+    display: inline;
+}
+
+#cardapio img{
+    height: 200px;
+}
+
+#cardapio h6 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: white;
+    background-color: rgb(126, 221, 221);
+    border-radius: 8px 8px 8px 8px;
+    font-weight: normal;
+    padding: 5px;
+}
+
+#cardapio1 img{
+    height: 200px;
+}
+
+#cardapio1 h6 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: white;
+    background-color: rgb(126, 221, 221);
+    border-radius: 8px 8px 8px 8px;
+    font-weight: normal;
+    padding: 5px;
+}
+
+#cardapio2 img{
+    height: 200px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+#cardapio2 h6 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: white;
+    background-color: rgb(126, 221, 221);
+    border-radius: 8px 8px 8px 8px;
+    font-weight: normal;
+    padding: 5px;
+}
+
+img {
+    width: 100%;
+}
+
+img.img_ajuste1 {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+
+section h1 {
+    font-size: 45px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#inicio h6 {
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+#atendimento h6 {
+    font-size: 15px;
+}
+
+#atendimento .col-6 h6 {
+    margin-top: 35px;
+    margin-left: 200px;
+    font-size: 20px;
+}
+
+#atendimento .col-6 h1 {
+    margin-left:250px ;
+}
+
+#cardapio h1 {
+    margin-top: 30px
+}
+
+#comunicacao{
+    background-color: rgb(253, 167, 183);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#comunicacao ul {
+    text-align: center;
+}
+
+#comunicacao ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+#comunicacao ul li a {
+    color: white;
+    text-decoration: none;
+}
+
