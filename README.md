@@ -1,2 +1,2 @@
-# cafeteria_lamour
+# site_cafeteria
 Meu site de cafeteria online
